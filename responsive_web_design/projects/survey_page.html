@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Survey</title>
+		<style>
+			h1 {
+				text-align: center;
+				font-size: 40px;
+			}
+
+			p {
+				text-align: center;
+			}
+
+			form {
+				background-color: lightgrey;
+			}
+
+			button {
+				background-color: #278cc7;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				cursor: pointer;
+			}
+
+			.section {
+				font-size: 20px;
+				color: black;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				border-bottom: 1px solid black;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="section">
+			<h1 id="title">Programmer Survey</h1>
+			<p id="description">this is a short description</p>
+		</div>
+		<form id="survey-form">
+			<div class="section">
+				<label id="name-label" for="name">Name</label>
+				<input id="name" type="text" placeholder="Your Name" required />
+				<label id="email-label" for="email">Email</label>
+				<input id="email" type="email" placeholder="email@email.com" required />
+			</div>
+			<div class="section">
+				<label id="number-label" for="number">Programming Experience</label>
+				<input id="number" type="number" placeholder="0" min="0" max="20" />
+				<label id="dropdown-label" for="dropdown">Primary Language</label>
+				<select id="dropdown">
+					<option value="js">JavaScript</option>
+					<option value="py">Python</option>
+					<option value="rb">Ruby</option>
+					<option value="java">Java</option>
+					<option value="c-sharp">C#</option>
+					<option value="c">C</option>
+				</select>
+			</div>
+			<div class="section">
+				<label for="dev-type">Work Preference</label>
+				<ul id="dev-type" style="list-style: none;">
+					<li>
+						<label
+							><input name="dev-type" value="1" type="radio" />Fullstack</label
+						>
+					</li>
+					<li><input name="dev-type" value="2" type="radio" />Frontend</li>
+					<li>
+						<label
+							><input name="dev-type" value="3" type="radio" />Backend</label
+						>
+					</li>
+				</ul>
+				<label for="floor-plan-type">Floor Plan Type</label>
+				<ul id="floor-plan-type" style="list-style: none;">
+					<li>
+						<label
+							><input
+								name="floor-plan-type"
+								value="1"
+								type="checkbox"
+							/>Open</label
+						>
+					</li>
+					<li>
+						<input name="floor-plan-type" value="2" type="checkbox" />Office
+					</li>
+					<li>
+						<label
+							><input
+								name="floor-plan-type"
+								value="3"
+								type="checkbox"
+							/>Cubicles</label
+						>
+					</li>
+					<li>
+						<label
+							><input
+								name="floor-plan-type"
+								value="4"
+								type="checkbox"
+							/>Remote</label
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="section">
+				<label for="textarea">Comments</label>
+				<textarea id="textarea" placeholder="Your comment..."></textarea>
+			</div>
+
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
