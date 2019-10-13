@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Technical Documentation</title>
+
+		<style>
+			body {
+				min-width: 290px;
+				color: #4d4e53;
+				background-color: #ffffff;
+				font-family: "Open Sans", Arial, sans-serif;
+				line-height: 1.5;
+			}
+
+			code {
+				padding: 5px;
+				color: rgb(129, 52, 52);
+			}
+
+			#navbar {
+				position: fixed;
+				min-width: 290px;
+				width: 300px;
+				height: 100%;
+				border-right: dashed;
+				border-color: black;
+			}
+
+			.nav-list {
+				display: inline;
+			}
+
+			.nav-list-item {
+				border-top: 1px solid;
+				list-style: none;
+			}
+
+			.nav-link {
+				display: block;
+				padding: 10px 30px;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			#main-doc {
+				position: absolute;
+				margin-left: 310px;
+				padding: 20px;
+				margin-bottom: 110px;
+			}
+
+			@media (max-width: 600px) {
+				.nav-link {
+					color: red;
+					font-weight: bold;
+				}
+			}
+
+			header {
+				margin: 10px;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav id="navbar">
+			<header>Programming Languages</header>
+			<ul class="nav-list">
+				<li class="nav-list-item">
+					<a class="nav-link" href="#Introduction">Introduction</a>
+				</li>
+				<li class="nav-list-item">
+					<a class="nav-link" href="#JavaScript">JavaScript</a>
+				</li>
+				<li class="nav-list-item">
+					<a class="nav-link" href="#Ruby">Ruby</a>
+				</li>
+				<li class="nav-list-item">
+					<a class="nav-link" href="#Elixir">Elixir</a>
+				</li>
+				<li class="nav-list-item">
+					<a class="nav-link" href="#Conclusion">Conclusion</a>
+				</li>
+			</ul>
+		</nav>
+		<main id="main-doc" class="container">
+			<section id="Introduction" class="main-section">
+				<header>Introduction</header>
+				<p>These are a bunch of languages</p>
+				<p>We wil cover Elixir, Ruby and JavaScript</p>
+			</section>
+			<section id="JavaScript" class="main-section">
+				<header>JavaScript</header>
+				<ul>
+					<li>It is easy to start</li>
+					<li>It is easy to read (mostly)</li>
+					<li>It is well supported</li>
+				</ul>
+				<p>
+					JavaScript is a scripting language which can be interpreted by most
+					browsers. It can be use for both web applications or non web
+					applications using NodeJS. Here is hello world
+				</p>
+				<code>
+					<pre>
+            const hello = name => `Hello ${name}`
+          </pre>
+				</code>
+			</section>
+			<section id="Ruby" class="main-section">
+				<header>Ruby</header>
+				<ul>
+					<li>It is easy to read</li>
+					<li>It is well supported</li>
+					<li>Ruby on Rails</li>
+				</ul>
+				<p>
+					Ruby is another scripted language written for developer happiness and
+					not to be as efficient as other languages. Here is some code.
+				</p>
+				<code>
+					<pre>
+            def hello(name)
+              "Hello #{name}"
+            end
+          </pre>
+				</code>
+				<p>
+					There are distinct differences in the syntax of ruby vs. the syntax of
+					javascript and elixir. One example is that ruby and elixir share the
+					<code>def</code> keyword. to denote a function definition. It is a
+					great language.
+				</p>
+
+				<p>
+					People have started shifting to python because of it's
+					approachability, rubylike syntax, library support and community.
+				</p>
+			</section>
+			<section id="Elixir" class="main-section">
+				<header>Elixir</header>
+				<ul>
+					<li>Built on top of Erlang</li>
+					<li>Concurrency & Parrallelism</li>
+					<li>Fast</li>
+				</ul>
+				<p>
+					Elixir is a compile functional language the runs on top of another
+					language, Erlang. It compiles down to BEAM files. It is a great
+					language for concurrency, parallelism and managing complicated process
+					trees.
+				</p>
+
+				<p>
+					Elixir shares much of it's syntax with ruby.
+				</p>
+				<code>
+					<pre>
+              def hello(name) do
+                "Hello #{name}"
+              end
+            </pre
+					>
+				</code>
+				<p>
+					It also has great error handling because it follows the philosophy of
+					letting process fail. If a process fails, the supervisor of that
+					process will restart it with a safe initial state.
+				</p>
+				<code>
+					<pre>
+            # List utilities
+            my_list = [1, 2, 3]
+
+            [head | tail] = my_list
+
+            IO.inspect(head) # => 1
+            IO.inspect(tail) # => [2, 3]
+          </pre>
+				</code>
+			</section>
+			<section id="Conclusion" class="main-section">
+				<header>Conclusion</header>
+				<p>That was some code!</p>
+				<code>
+					<pre>
+              console.log("Bye") // => JavaScript
+
+              puts "Bye" # => Ruby
+
+              IO.puts('Bye') # => Elixir
+            </pre
+					>
+				</code>
+			</section>
+		</main>
+	</body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
