@@ -10,6 +10,8 @@
 
 ### Responsive Web Design
 
+[Certificate](https://www.freecodecamp.org/certification/bahodge/responsive-web-design)
+
 I personally suck at this one the most. I don't have the eye for design and I usually get frustrated
 
 - [Tribute Page](https://codepen.io/bahodge/full/MWWKqeB)
@@ -17,5 +19,12 @@ I personally suck at this one the most. I don't have the eye for design and I us
 - [Product](https://codepen.io/bahodge/full/poogQzb)
 - [Technical Documentation](https://codepen.io/bahodge/full/KKKVbWR)
 - [Portfolio](https://codepen.io/bahodge/full/xxxZmab)
+
+### Javascript Data Strucures and Algorithms
+
+[Certificate](https://www.freecodecamp.org/certification/bahodge/javascript-algorithms-and-data-structures)
+
+The code is in the repo.
+
 
 ### Good Luck on your adventure
