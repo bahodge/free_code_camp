@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Portfolio</title>
+		<style>
+			#navbar {
+				display: flex;
+				justify-content: flex-end;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background-color: lightgoldenrodyellow;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.nav-list {
+				/* display: inline; */
+			}
+
+			.nav-list-item {
+				display: inline;
+				list-style: none;
+			}
+
+			.nav-link {
+				font-size: 20px;
+				padding: 5px;
+			}
+
+			.nav-link:hover {
+				cursor: pointer;
+			}
+
+			#welcome-section {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 100vh;
+				background-color: rgb(173, 115, 115);
+				color: white;
+			}
+
+			#projects {
+				display: grid;
+				grid-gap: 4rem;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr;
+				grid-template-areas:
+					"title title title"
+					"project project project";
+				width: 100%;
+				height: 100vh;
+				background-color: rgb(99, 187, 121);
+				color: white;
+			}
+
+			.projects-title {
+				margin-top: 100px;
+				font-size: 2rem;
+				text-align: center;
+				grid-area: 1 / 4 / 1/ 1;
+			}
+
+			.project-tile {
+				text-align: center;
+				background-color: rgb(49, 107, 63);
+				font-size: 1.5rem;
+				color: white;
+			}
+
+			@media (max-width: 600px) {
+				#projects {
+					grid-gap: 2rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main id="main-doc">
+			<nav id="navbar">
+				<ul class="nav-list">
+					<li class="nav-list-item"><a class="nav-link" href="#top">Top</a></li>
+					<li class="nav-list-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-list-item">
+						<a
+							id="profile-link"
+							class="nav-link"
+							target="_blank"
+							href="https://www.github.com/bahodge"
+							>Github</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<section id="welcome-section">
+				<h1>I am Ben</h1>
+			</section>
+			<section id="projects">
+				<h3 class="projects-title">These are my projects</h3>
+				<div class="project-tile">
+					<a target="_blank" href="https://codepen.io/bahodge/full/KKKVbWR"
+						>Technical Documentation</a
+					>
+				</div>
+				<div class="project-tile">
+					<a target="_blank" href="https://codepen.io/bahodge/full/rNNxqvM"
+						>Survey</a
+					>
+				</div>
+				<div class="project-tile">
+					<a target="_blank" href="https://codepen.io/bahodge/full/MWWKqeB"
+						>Tribute</a
+					>
+				</div>
+			</section>
+		</main>
+	</body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
