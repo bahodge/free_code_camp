@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Potatoes</title>
+		<style>
+			.container {
+				font-size: 20px;
+				min-height: 300px;
+				background: #dddddd;
+				/* display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: auto;
+				grid-gap: 10px 5px;
+				grid-template-areas:
+					"header header header"
+					"title title title"
+					"content content content"; */
+			}
+
+			#main {
+				margin: 30px 8px;
+				padding: 15px;
+				border-radius: 5px;
+				background: #eee;
+			}
+
+			@media (max-width: 460px) {
+				#main {
+					margin: 0;
+				}
+			}
+
+			.navbar {
+				background-color: rgb(20, 74, 95);
+				text-decoration: none;
+				text-align: right;
+			}
+
+			.navlink {
+				margin-left: 10px;
+				margin-right: 10px;
+				/* padding: 10px; */
+			}
+
+			a:visited,
+			a:link {
+				padding: 14px 25px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				color: rgb(220, 236, 223);
+			}
+
+			a:hover,
+			a:active {
+				color: rgb(255, 255, 255);
+				background-color: rgb(6, 53, 71);
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			.header {
+				grid-row: auto;
+				grid-area: header;
+			}
+
+			.title {
+				font-size: 30px;
+				grid-area: title;
+				grid-column: 1 / 4;
+				grid-row: 2 / 2;
+			}
+
+			img {
+				max-width: 100%;
+				display: block;
+				height: auto;
+				margin: 0 auto;
+			}
+
+			#img-div {
+				background: white;
+				padding: 10px;
+				margin: 0;
+			}
+
+			#img-caption {
+				margin: 25px 0 8px 0;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="container" id="main">
+			<header class="header">
+				<nav class="navbar">
+					<ul>
+						<li class="navlink">
+							<a href="#" id="tribute-link" target="_blank">Moar Potates</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<h1 class="title" id="title">Tribute to Potatoes</h1>
+			<div id="img-div">
+				<img
+					id="image"
+					src="https://www.betternutrition.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_620/MTYxNjAxMzcxMTA2MTkwOTcz/potatoe.webp"
+				/>
+				<figcaption id="img-caption">See how yummy potatoes look</figcaption>
+			</div>
+			<article>
+				<p id="tribute-info">
+					The potato is a root vegetable, a starchy tuber of the plant Solanum
+					tuberosum, and the plant itself, a perennial in the family Solanaceae,
+					native to the Americas. Wild potato species can be found throughout
+					the Americas, from the United States to southern Chile.
+				</p>
+			</article>
+		</main>
+	</body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
